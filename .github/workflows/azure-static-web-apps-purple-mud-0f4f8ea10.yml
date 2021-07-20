@@ -31,6 +31,10 @@ jobs:
           #api_location: "api" # Api source code path - optional
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+          env: # Add environment variables here
+            REACT_APP_DOC_ID: "ac1b9dfcfa6247d09aac6c774c6a95e3"
+            REACT_APP_TRANSLOADIT_KEY: "37baf3b6c9a841048c6c093dc4224b66"
+            REACT_APP_TRANSLOADIT_TEMPLATE: "e3fcb9a5448a41b48efcdee61fb2ee70"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
